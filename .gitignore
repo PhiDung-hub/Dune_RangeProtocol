@@ -1,2 +1,5 @@
 # pools info & folder creation
 pools.*
+
+# Test query
+dummy.sql
