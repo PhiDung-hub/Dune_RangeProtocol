@@ -3,32 +3,32 @@ WITH
         SELECT
             *
         FROM
-            dune.pdung001.result_arbitrum_daily
+            dune.rangeprotocol_user.result_range_protocol_arbitrum
     ),
     base_daily_stats AS (
         SELECT
             *
         FROM
-            dune.pdung001.result_base_daily
+            dune.rangeprotocol_user.result_range_protocol_base
     ),
     bnb_daily_stats AS (
         SELECT
             *
         FROM
-            dune.pdung001.result_bnb_daily
+            dune.rangeprotocol_user.result_range_protocol_bnb
     ),
     ethereum_daily_stats AS (
         SELECT
             *
         FROM
-            dune.pdung001.result_ethereum_daily
+            dune.rangeprotocol_user.result_range_protocol_ethereum
     ),
     polygon_daily_stats AS (
         SELECT
             *,
             NULL as total_volume_usd
         FROM
-            dune.pdung001.result_polygon_daily
+            dune.rangeprotocol_user.result_range_protocol_polygon
     ),
     day_series AS (
         SELECT
