@@ -1,3 +1,4 @@
+-- calculate the exact user whenever a mint event is emitted
 WITH
     users AS (
         SELECT
@@ -6,13 +7,6 @@ WITH
             evt_block_time as time
         FROM
             range_protocol_ethereum.RangeProtocolVault_evt_Minted
-        UNION
-        SELECT
-            receiver,
-            contract_address,
-            evt_block_time as time
-        FROM
-            range_protocol_ethereum.RangeProtocolVault_evt_Burned
     )
 SELECT
     t1.time,
